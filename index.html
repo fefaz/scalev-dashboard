@@ -133,6 +133,14 @@ body { font-family: 'DM Sans', sans-serif; background: var(--gray-50); color: va
   .main { padding: 1rem; }
   .topbar, .filter-bar { padding: 0 1rem; }
   .metrics-lifetime { grid-template-columns: 1fr 1fr; }
+  
+  /* Tambahan untuk merapikan filter bar di HP */
+  .filter-bar { flex-direction: column; align-items: stretch; padding: 12px 1rem; gap: 12px; }
+  .period-group { display: flex; justify-content: space-between; }
+  .period-btn { flex: 1; text-align: center; }
+  .filter-sep { display: none; /* Sembunyikan garis pemisah di HP */ }
+  .date-input { width: 100%; }
+  .btn-apply { width: 100%; padding: 10px; }
 }
 </style>
 </head>
